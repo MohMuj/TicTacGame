@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+    <TableLayout
+            android:background="@color/material_grey700"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:id="@+id/tableLayout" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+        <TableRow
+                android:layout_marginBottom="4sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <Button
+                    android:background="@color/md_white"
+                    android:layout_marginRight="4sp"
+                    android:layout_width="80sp"
+                    android:layout_height="80sp" android:id="@+id/bu1" android:onClick="buclick"
+                    android:textColor="@android:color/black" android:textSize="30sp"/>
+            <Button
+                    android:background="@color/md_white"
+                    android:layout_marginRight="4sp"
+                    android:layout_width="80sp"
+                    android:layout_height="80sp" android:id="@+id/bu2" android:onClick="buclick"
+                    android:textColor="@android:color/black" android:textSize="30sp"/>
+            <Button
+                    android:background="@color/md_white"
+                    android:layout_width="80sp"
+                    android:layout_height="80sp" android:id="@+id/bu3" android:onClick="buclick"
+                    android:textColor="@android:color/black" android:textSize="30sp"/>
+        </TableRow>
+        <TableRow android:gravity="center"
+                  android:layout_marginBottom="4sp"
+                  android:layout_width="match_parent" android:layout_height="match_parent">
+            <Button
+                    android:background="@color/md_white"
+                    android:layout_marginRight="4sp"
+                    android:layout_width="80sp"
+                    android:layout_height="80sp" android:id="@+id/bu4" android:onClick="buclick"
+                    android:textColor="@android:color/black" android:textSize="30sp"/>
+            <Button
+                    android:background="@color/md_white"
+                    android:layout_marginRight="4sp"
+                    android:layout_width="80sp"
+                    android:layout_height="80sp" android:id="@+id/bu5" android:onClick="buclick"
+                    android:textColor="@android:color/black" android:textSize="30sp"/>
+            <Button
+                    android:background="@color/md_white"
+                    android:layout_width="80sp"
+                    android:layout_height="80sp" android:id="@+id/bu6" android:onClick="buclick"
+                    android:textColor="@android:color/black" android:textSize="30sp"/>
+        </TableRow>
+        <TableRow android:gravity="center"
+                  android:layout_width="match_parent" android:layout_height="match_parent">
+            <Button
+                    android:background="@color/md_white"
+                    android:layout_marginRight="4sp"
+                    android:layout_width="80sp"
+                    android:layout_height="80sp" android:id="@+id/bu7" android:onClick="buclick"
+                    android:textColor="@android:color/black" android:textSize="30sp"/>
+            <Button
+                    android:background="@color/md_white"
+                    android:layout_marginRight="4sp"
+                    android:layout_width="80sp"
+                    android:layout_height="80sp" android:id="@+id/bu8" android:onClick="buclick"
+                    android:textColor="@android:color/black" android:textSize="30sp"/>
+            <Button
+                    android:background="@color/md_white"
+                    android:layout_width="80sp"
+                    android:layout_height="80sp" android:id="@+id/bu9" android:onClick="buclick"
+                    android:textColor="@android:color/black" android:textSize="30sp"/>
+        </TableRow>
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </TableLayout>
+    <Button
+            android:background="@color/md_white"
+            android:text="Reset"
+            android:layout_width="108dp"
+            android:layout_height="52dp"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/button"
+            app:layout_constraintHorizontal_bias="0.498"
+            android:layout_marginBottom="100dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tableLayout"
+            android:clickable="false"
+            android:onClick="resetgame"
+    />
+</android.support.constraint.ConstraintLayout>
